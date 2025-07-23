@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+
+
+/* Navbar ثابت */
+.navbar {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #fef4e8;
+  color: #222;
+  line-height: 1.7;
+  font-size: 16px;
+}
+navbar-brand fw-bold {
+    font-weight: 700;
+    color: #ff5e16;
+  }
+
+
+  
+.hero {
+  background-image: url('../assets/images/about.png'); /* عدّل المسار بحسب مكانك */
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 200px 20px 150px; /* أعلى 200px للحصول على نفس الارتفاع */
+  text-align: center;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #F26A2E;
+}
+
+.hero p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.highlight {
+  color: #F26A2E;
+}
+
+.hero-buttons {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+
+
+
+.contact-section {
+  background-color: #fff5ea;
+  padding: 60px 20px;
+}
+
+.contact-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 300px;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #f2793c;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-info li i {
+  margin-left: 10px;
+  color: #f2793c;
+}
+
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: #555;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f2793c;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #f2793c;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contact-form button {
+  background-color: #f2793c;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e0662c;
+}
+
+.map-wrapper iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+
+
+
+
+
+.footer-custom {
+  background-color: #3A3A3A;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #ff5e16;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.text-orange {
+  color: #ff5e16;
+}

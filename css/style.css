@@ -1,0 +1,130 @@
+/* من نحن */
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #fef4e8;
+  color: #222;
+  line-height: 1.7;
+}
+
+.text-orange {
+  color: #ff5e16;
+}
+
+.hero-section {
+  background-image: url('../assets/images/about.png');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+}
+
+.hero-section .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ff5e16;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #25D366;
+  border: none;
+}
+
+
+#about img {
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+.card h4 {
+  color: #ff5e16;
+  font-weight: bold;
+}
+.card p {
+  color: #333;
+}
+
+
+
+#team .card-img-top {
+  height: 400px;
+    width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+#team .card-title {
+  color: #ff5e16;
+  font-weight: bold;
+}
+
+
+#services .card {
+  background-color: white;
+  border-radius: 15px;
+}
+#services h4 {
+  font-weight: bold;
+}
+
+
+
+
+.grayscale {
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.grayscale:hover {
+  filter: none;
+  opacity: 1;
+}
+
+
+#features img {
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+#features h3 {
+  font-weight: bold;
+}
+
+
+
+.footer-custom {
+  background-color: #3A3A3A;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #ff5e16;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.text-orange {
+  color: #ff5e16;
+}
+
+
+
