@@ -1,0 +1,205 @@
+/* صفحة المشاريع */
+
+
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+.hero-section {
+  background-image: url('../assets/images/about.png');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+}
+
+.hero-section .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+/* --- عام --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px; /* خففت حجم الخط الأساسي */
+  background-color: #fef4e8;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* العناوين */
+h1, .title-main {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff5e16;
+}
+
+h2, h3, .title-section {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff5e16;
+}
+
+/* Navbar ثابت */
+.navbar {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #fef4e8;
+  color: #222;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.navbar-brand.fw-bold {
+  font-weight: 700;
+  color: #ff5e16;
+}
+
+
+/* --- شبكة المشاريع (Cards) --- */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 220px; /* ارتفاع ثابت للصورة */
+  object-fit: cover; /* يخليها تغطي الكارد */
+  display: block;
+  margin-left: 50px;
+  margin-right: -20px;
+  max-width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: right; /* لأن النصوص عربية */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card .badge {
+  font-size: 12px;
+  background-color: #fef4e8;
+  color: #ff5e16;
+  border: 1px solid #ff5e16;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.card a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff5e16;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+/* الأزرار البرتقالية */
+.text-orange {
+  color: #ff5e16;
+  
+}
+
+.btn-outline-orange {
+  border: 1px solid #ff5e16;
+  color: #ff5e16;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-outline-orange:hover {
+  background: #ff5e16;
+  color: #fff;
+}
+
+
+/* Digital services section */
+.digital-services {
+  background-color: #f9f0e6;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.digital-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+
+/* Footer */
+.footer-custom {
+  background-color: #3A3A3A;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #ff5e16;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+
+/* زر تغيير اللغة */
+#lang-toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#lang-toggle-btn:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card img {
+    height: 180px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+}
